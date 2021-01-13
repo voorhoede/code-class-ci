@@ -1,0 +1,369 @@
+/* overpass-100normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src:
+    local('Overpass Thin '),
+    local('Overpass-Thin'),
+    url('overpass-latin-100.a797ae0e.woff2') format('woff2'), 
+    url('overpass-latin-100.5d8c58c5.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-100italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100;
+  src:
+    local('Overpass Thin italic'),
+    local('Overpass-Thinitalic'),
+    url('overpass-latin-100italic.8c356307.woff2') format('woff2'), 
+    url('overpass-latin-100italic.80e5a6d9.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-200normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src:
+    local('Overpass Extra Light '),
+    local('Overpass-Extra Light'),
+    url('overpass-latin-200.d85b2bce.woff2') format('woff2'), 
+    url('overpass-latin-200.3816686c.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-200italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200;
+  src:
+    local('Overpass Extra Light italic'),
+    local('Overpass-Extra Lightitalic'),
+    url('overpass-latin-200italic.ecce28e9.woff2') format('woff2'), 
+    url('overpass-latin-200italic.c2e8d33a.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-300normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Overpass Light '),
+    local('Overpass-Light'),
+    url('overpass-latin-300.d27dfe8f.woff2') format('woff2'), 
+    url('overpass-latin-300.e9bdaf3b.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-300italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Overpass Light italic'),
+    local('Overpass-Lightitalic'),
+    url('overpass-latin-300italic.36801303.woff2') format('woff2'), 
+    url('overpass-latin-300italic.53423abf.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-400normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Overpass Regular '),
+    local('Overpass-Regular'),
+    url('overpass-latin-400.d19efb67.woff2') format('woff2'), 
+    url('overpass-latin-400.14ac4716.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-400italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Overpass Regular italic'),
+    local('Overpass-Regularitalic'),
+    url('overpass-latin-400italic.a19a921c.woff2') format('woff2'), 
+    url('overpass-latin-400italic.8ce34c23.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-600normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src:
+    local('Overpass SemiBold '),
+    local('Overpass-SemiBold'),
+    url('overpass-latin-600.737e34b4.woff2') format('woff2'), 
+    url('overpass-latin-600.4261fd49.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-600italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 600;
+  src:
+    local('Overpass SemiBold italic'),
+    local('Overpass-SemiBolditalic'),
+    url('overpass-latin-600italic.e995c1f8.woff2') format('woff2'), 
+    url('overpass-latin-600italic.6bd1c939.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-700normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Overpass Bold '),
+    local('Overpass-Bold'),
+    url('overpass-latin-700.1d48a913.woff2') format('woff2'), 
+    url('overpass-latin-700.ef515edb.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-700italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Overpass Bold italic'),
+    local('Overpass-Bolditalic'),
+    url('overpass-latin-700italic.2fbfdca1.woff2') format('woff2'), 
+    url('overpass-latin-700italic.1768e1bd.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-800normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src:
+    local('Overpass ExtraBold '),
+    local('Overpass-ExtraBold'),
+    url('overpass-latin-800.92f4bcee.woff2') format('woff2'), 
+    url('overpass-latin-800.41b83246.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-800italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 800;
+  src:
+    local('Overpass ExtraBold italic'),
+    local('Overpass-ExtraBolditalic'),
+    url('overpass-latin-800italic.f186c77f.woff2') format('woff2'), 
+    url('overpass-latin-800italic.be7313f0.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-900normal - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src:
+    local('Overpass Black '),
+    local('Overpass-Black'),
+    url('overpass-latin-900.435cdccd.woff2') format('woff2'), 
+    url('overpass-latin-900.345e0061.woff') format('woff'); /* Modern Browsers */
+}
+
+/* overpass-900italic - latin */
+@font-face {
+  font-family: 'Overpass';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 900;
+  src:
+    local('Overpass Black italic'),
+    local('Overpass-Blackitalic'),
+    url('overpass-latin-900italic.90b1fd8d.woff2') format('woff2'), 
+    url('overpass-latin-900italic.a7cd3315.woff') format('woff'); /* Modern Browsers */
+}
+
+
+:root {
+    --main-bg-color: #fafafa;
+    --main-type-color: #3c3c3c;
+    --main-highlight-color: #eddd3e;
+    --alt-bg-color: #3c3c3c;
+    --alt-type-color: #ffffff;
+    --alt-highlight-color: #64b5f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 1.4rem;
+}
+
+body {
+  color: var(--main-type-color);
+  font-family: overpass, sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  border-bottom: 8px solid var(--main-highlight-color);
+  background-color: var(--main-bg-color);
+}
+
+.section--dark {
+  background-color: var(--alt-bg-color);
+  color: var(--alt-type-color);
+}
+
+p, ul, ol, pre {
+  max-width: 45em;
+  margin-bottom: 1.3em;
+}
+
+iframe {
+  flex-grow: 1;
+  width: 100%;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li > ul {
+  list-style-type: circle;
+}
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  margin-bottom: 0.5em;
+  font-weight: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+  font-weight: 300;
+}
+
+h2, .h2 {
+  font-size: 2.827em;
+}
+
+h3, .h3 {
+  font-size: 1.999em;
+}
+
+h4, .h4 {
+  font-size: 1.414em;
+}
+
+img {
+  margin-bottom: 2rem;
+  vertical-align: middle;
+}
+
+img + img {
+  margin-top: 2rem;
+}
+
+a {
+  color: var(--alt-highlight-color);
+  font-weight: bold;
+}
+
+blockquote, cite {
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 300;
+  max-width: 35rem;
+}
+
+blockquote p::before,
+blockquote p::after {
+  position: absolute;
+  font-size: 1.414em;
+  font-weight: 500;
+}
+
+blockquote p::before {
+  margin-left: -0.75em;
+  content: "“";
+}
+
+blockquote p::after {
+  margin-left: 0.5em;
+  content: "”";
+}
+
+pre {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: var(--alt-bg-color);
+  color: var(--alt-type-color);
+}
+
+.code-pair-example {
+  grid-column-gap: 2em;
+  display: grid;
+  grid-auto-columns: minmax(25em, auto);
+  grid-auto-flow: column;
+  grid-template-rows: auto 1fr;
+}
+
+.side-by-side {
+  display: flex;
+  flex-direction: row;
+}
+
+.side-by-side > * {
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=main.802c41ba.css.map */
