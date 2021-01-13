@@ -1,0 +1,11 @@
+{
+  "name": "code-class-ci",
+  "version": "1.0.0",
+  "description": "Code class about CI and GitHub Actions at De Voorhoede.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voorhoede/code-class-ci.git"
+  },
+  "author": "Selwyn <talk@selwyn.cc> (https://selwyn.cc/)",
+  "license": "ISC"
+}
