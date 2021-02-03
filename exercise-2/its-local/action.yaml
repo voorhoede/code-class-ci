@@ -1,0 +1,9 @@
+name: 'I am a local action'
+description: 'I am a local action, really!'
+inputs:
+  message:
+    description: 'A message'
+    required: false
+runs:
+  using: 'node12'
+  main: 'dist/main.js'

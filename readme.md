@@ -17,6 +17,11 @@ cd code-class-ci
 0. Add a step to run `npm run lint`.
 0. Bonus: Optimize the action to finish as quick as possible.
 
+### Two
+0. Initial setup: `cd exercise-2; npm ci`.
+0. Create a workflow that runs the local `its-local` action.
+0. Pass the local action the `message` input and use it inside the `console.info` argument.
+
 ## Solutions
 To get the solution for an exercise apply the solution patch file, for example for the first exercise:
 ```sh

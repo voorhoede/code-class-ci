@@ -1,0 +1,23 @@
+--- a/exercise-2/its-local/main.js
++++ b/exercise-2/its-local/main.js
+@@ -1,6 +1,5 @@
+-import { debug } from '@actions/core';
++import { debug, getInput } from '@actions/core';
+
+ debug(`GitHub Event Name: ${process.env.GITHUB_EVENT_NAME}`);
+
+-console.info(`╰( ⁰ ਊ ⁰ )━☆ﾟ.*･｡ﾟ `);
+-//       message input here ${} ^
++console.info(`╰( ⁰ ਊ ⁰ )━☆ﾟ.*･｡ﾟ ${getInput('message')}`);
+diff --git a/exercise-2/log-stuff.yaml b/exercise-2/log-stuff.yaml
+--- a/exercise-2/log-stuff.yaml
++++ b/exercise-2/log-stuff.yaml
+@@ -6,3 +6,8 @@ jobs:
+   lint:
+     runs-on: ubuntu-latest
+     steps:
++      - uses: actions/checkout@v2
++
++      - uses: ./.github/actions/its-local
++        with:
++          message: 'It is wednesday'
