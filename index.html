@@ -1,1 +1,49 @@
-<!doctype html><html><head><meta charset="utf-8"><title>CI & GitHub Actions</title><script src="main.34a22bfd.js" defer></script><link rel="stylesheet" href="main.e299d382.css"></head><body> <section> <h1>CI & GitHub Actions</h1> </section> <section class="section--dark"> <h2 lang="nl">Kort door te bocht</h2> <dl class="side-by-side"> <div> <dt><h3>CI</h3></dt> <dd><pre>npm test</pre></dd> </div> <div> <dt><h3>CD</h3></dt> <dd><pre>npm build</pre></dd> </div> </dl> </section> <section> <h2>Why?</h2> <ul> <li>Prevent bugs</li> <li>Shareable results</li> </ul> </section> <section> <h2>How?</h2> <div class="side-by-side"> <img src="jenkins-icon.f0eeae6c.svg" alt="Jenkins" width="200"> <img src="travis-ci-icon.2bf9dacd.svg" alt="Travis CI" width="200"> <img src="github-icon.55abf191.svg" alt="GitHub Actions" width="200"> <img src="buildkite-icon.5099f7e8.svg" alt="Buildkite" width="200"> </div> </section> <section class="section--dark"> <h2>GitHub Actions</h2> <p class="h4"> Event > Workflow.yaml > Jobs > Steps </p> </section> </body></html>
+<!doctype html><html><head><meta charset="utf-8"><title>CI & GitHub Actions</title><script src="main.34a22bfd.js" defer></script><link rel="stylesheet" href="main.0f93d988.css"></head><body> <section> <h1>CI & GitHub Actions</h1> </section> <section class="section--dark"> <h2 lang="nl">Kort door te bocht</h2> <dl class="side-by-side"> <div> <dt><h3>CI</h3></dt> <dd><pre>npm test</pre></dd> </div> <div> <dt><h3>CD</h3></dt> <dd><pre>npm build</pre></dd> </div> </dl> </section> <section> <h2>Why?</h2> <ul> <li>Prevent bugs</li> <li>Shareable results</li> </ul> </section> <section> <h2>How?</h2> <div class="side-by-side"> <img src="jenkins-icon.f0eeae6c.svg" alt="Jenkins" width="200"> <img src="travis-ci-icon.2bf9dacd.svg" alt="Travis CI" width="200"> <img src="github-icon.55abf191.svg" alt="GitHub Actions" width="200"> <img src="buildkite-icon.5099f7e8.svg" alt="Buildkite" width="200"> </div> </section> <section class="section--dark"> <h2>GitHub Actions</h2> <p class="h4"> Event > Workflow > Jobs > Steps </p> </section> <section class="section--dark"> <h2>How to name things</h2> <pre>
+        <code>
+name: Continuous integration
+
+on: pull_request
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - uses: actions-rs/cargo@v1
+        with:
+          command: check
+
+  test:
+    name: Test Suite
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - uses: actions-rs/cargo@v1
+        with:
+          command: test
+        </code>
+      </pre> </section> <section class="section--dark"> <pre>
+        <code>
+name: Fork notification
+
+on: fork
+
+jobs:
+...
+        </code>
+      </pre> </section> <section> <h2>Let us code</h2> <pre>
+        <code>.github/workflows/audit.yaml</code>
+      </pre> <pre>
+        <code>working-directory: exercise-1</code>
+      </pre> </section> <section> <h2>GitHub Actions: Action</h2> <p> <a href="https://github.com/actions/toolkit"> https://github.com/actions/toolkit </a> </p> <pre>
+        <code>.github/actions/its-local</code>
+      </pre> </section> <section> <h2>Marketplace</h2> <pre>
+        <code>voxmedia/github-action-slack-notify-build@9b583ec</code>
+      </pre> </section> <section class="section--dark"> <h2>Conclusion</h2> <ol> <li><a href="https://github.com/voorhoede/.github">voorhoede/.github</a></li> <li><a href="https://github.com/nektos/act">Act</a></li> <li><a href="https://github.com/sdras/awesome-actions">Awesome Actions</a></li> </ol> </section> <section class="section--dark"> <h2 lang="nl">Vragen rondje</h2> </section> </body></html>

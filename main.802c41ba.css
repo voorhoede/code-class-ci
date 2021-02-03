@@ -245,11 +245,11 @@ section {
   min-height: 100vh;
   padding: 2rem;
   border-bottom: 8px solid var(--main-highlight-color);
-  background-color: var(--main-bg-color);
+  background: linear-gradient(140deg, rgba(144, 247, 236, 0.2), transparent);
 }
 
 .section--dark {
-  background-color: var(--alt-bg-color);
+  background: var(--alt-bg-color);
   color: var(--alt-type-color);
 }
 
@@ -269,6 +269,10 @@ ul, ol {
 
 ul {
   list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-alpha;
 }
 
 li > ul {
