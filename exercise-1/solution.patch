@@ -1,0 +1,37 @@
+--- a/exercise-1/audit.yaml
++++ b/exercise-1/audit.yaml
+@@ -1,6 +1,32 @@
+ name: Code Audit
+
+-on: push
++on: pull_request
++
++defaults:
++  run:
++    working-directory: exercise-1
+
+ jobs:
+-# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
++  lint:
++    runs-on: ubuntu-latest
++    steps:
++      - uses: actions/checkout@main
++
++      - name: Setup Node.js
++        uses: actions/setup-node@v2
++        with:
++          node-version: '14'
++
++      - name: Cache dependencies
++        uses: actions/cache@v2
++        with:
++          path: ~/.npm
++          key: npm-${{ hashFiles('package-lock.json') }}
++          restore-keys: |
++            npm-
++
++      - name: Install dependencies
++        run: npm ci --ignore-scripts
++
++      - name: Lint code
++        run: npm run lint -- --max-warnings 0
