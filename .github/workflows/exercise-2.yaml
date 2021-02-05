@@ -1,0 +1,12 @@
+name: Log stuff
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: ./.github/actions/its-local
+        with:
+          message: 'Bericht'
