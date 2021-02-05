@@ -1,4 +1,4 @@
-name: Zowie - Exercise 1
+name: Code Audit
 on: push
 
 defaults:
@@ -9,6 +9,8 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+
       - name: install dep
         run: npm i
       - name: lint
