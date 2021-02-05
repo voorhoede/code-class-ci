@@ -5,4 +5,9 @@ on: [push, pull_request]
 jobs:
   job1:
     steps:
-      - run: npm run lint
+      - name: Install
+        run: npm i
+        working-directory: ./exercise-1
+      - name: Lint
+        run: npm run lint
+        working-directory: ./exercise-1
