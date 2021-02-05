@@ -1,0 +1,13 @@
+name: Frank's exercise 2
+on: push
+jobs:
+  test:
+    name: Run it baby
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - uses: ./exercise-2/its-local
+        with: 
+          message: Harde kaas
+
