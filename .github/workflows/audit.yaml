@@ -10,9 +10,9 @@ jobs:
     name: lint
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Lint pages
         run: |
-          pwd
           cd exercise-1
           npm ci
           npm run lint
