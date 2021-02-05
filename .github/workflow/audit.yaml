@@ -4,16 +4,18 @@ on: [push, pull_request]
 
 defaults:
   run:
-    working-directory: ./exercise-1
+    working-directory: exercise-1
 
 jobs:
   lint:
+    name: test all the things
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - name: checkout repo
+        uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install
+      - name: install dependencies
+        run: npm ci
 
-      - name: Lint code
+      - name: lint code
         run: npm run lint
