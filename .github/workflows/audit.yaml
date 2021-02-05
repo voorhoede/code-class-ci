@@ -8,14 +8,12 @@ defaults:
 
 jobs:
   lint:
-    name: test all the things
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repo
-        uses: actions/checkout@v2
+      - uses: actions/checkout@main
 
-      - name: install dependencies
-        run: npm ci
+      - name: Install dependencies
+        run: npm i
 
-      - name: lint code
+      - name: Lint code
         run: npm run lint
