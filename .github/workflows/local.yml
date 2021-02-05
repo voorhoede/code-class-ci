@@ -1,0 +1,10 @@
+name: local action
+on: pull_request
+jobs:
+  message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: its-local
+        uses: .exercise-2/its-local
+        with:
+          message: 'hello world'
