@@ -1,0 +1,17 @@
+name: Code Audit
+
+on: pull_request
+
+defaults:
+  run:
+    working-directory: exercise-1
+
+jobs:
+  lint:
+    name: Test all the things
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm run lint
+
+
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
