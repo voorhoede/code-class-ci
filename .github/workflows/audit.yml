@@ -11,7 +11,7 @@ jobs:
           node-version: 14
       - name: Install dependencies
         run: npm install
-        working-directory: ./excercise-1
+        working-directory: ./exercise-1
       - name: Lint
         run: npm run lint
-        working-directory: ./excercise-1
+        working-directory: ./exercise-1
