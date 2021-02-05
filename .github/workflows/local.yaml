@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./exercise-2/its-local
         with:
-          message: 'It is wednesday'
+          message: 'Hello from action 👋'
