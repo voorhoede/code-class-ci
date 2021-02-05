@@ -1,0 +1,12 @@
+name: Frank's tests
+on: push
+jobs:
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: npm install
+      - name: Audit
+        run: cd exercise-1 && npm run lint
+
