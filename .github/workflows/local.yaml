@@ -3,7 +3,7 @@ name: Log stuff
 on: push
 
 jobs:
-  lint:
+  show-message:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
