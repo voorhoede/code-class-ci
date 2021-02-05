@@ -1,0 +1,25 @@
+name: Log stuff
+
+on: pull_request
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+
+    - name: install dependencies
+      working-directory: exercise-2
+      run: npm ci
+
+    - name: run build
+      working-directory: exercise-2
+      run: npm run build
+
+    - uses: ./exercise-2/its-local
+      with:
+        message: 'It is Friday'
