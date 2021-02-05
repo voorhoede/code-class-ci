@@ -6,10 +6,11 @@ jobs:
   lint:
     name: lint
     runs-on: ubuntu-latest
-    working-directory: ./exercise-1 
     steps:
     - uses: actions/checkout@master
     - name: npm ci
       run: npm ci
+      working-directory: ./exercise-1 
     - name: lint
       run: npm run lint
+      working-directory: ./exercise-1 
