@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ./exercise-2/it-local
+      - uses: ./exercise-2/its-local
         with:
           message: 'It is Friday!'
