@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ./.github/actions/its-local
+      - uses: ./exercise-2/its-local
         with:
           message: 'Bericht'
