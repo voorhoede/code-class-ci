@@ -1,0 +1,18 @@
+name: Code Audit
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint pages
+        run: |
+          pwd
+          cd exercise-1
+          npm ci
+          npm run lint
