@@ -1,0 +1,15 @@
+name: Code Audit
+
+on: push
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: npm ci
+      run: npm ci
+    - name: lint
+     run: |
+        npm run lint
