@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: its-local
-        uses: .exercise-2/its-local
+        uses: ./exercise-2/its-local
         with:
           message: 'hello world'
