@@ -1,0 +1,15 @@
+name: Zowie - Exercise 1
+on: push
+
+defaults:
+  run:
+    working-directory: exercise-1
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install dep
+        run: npm i
+      - name: lint
+        run: npm run lint
