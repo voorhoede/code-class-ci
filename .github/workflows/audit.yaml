@@ -9,7 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: npm ci
-      run: npm ci
+      run: |
+        cd exercise-1
+        npm ci
     - name: lint
       run: 
         npm run lint
