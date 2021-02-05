@@ -399,5 +399,4 @@ exports.getState = getState;
 
 core.debug(`GitHub Event Name: ${process.env.GITHUB_EVENT_NAME}`);
 
-console.info(`╰( ⁰ ਊ ⁰ )━☆ﾟ.*･｡ﾟ `);
-//       message input here ${} ^
+console.info(`╰( ⁰ ਊ ⁰ )━☆ﾟ.*･｡ﾟ `, core.getInput("message"));
