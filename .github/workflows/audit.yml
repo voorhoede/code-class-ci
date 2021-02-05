@@ -1,0 +1,25 @@
+name: audit
+on: push
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: exercise-1
+
+    steps:
+
+    - name: git checkout
+      uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+        registry-url: 'https://registry.npmjs.org'
+
+    - name: install dependencies
+      run: npm ci
+
+    - name: lint code
+      run: npm run lint
