@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 defaults:
   run:
-    working-directory: exercise-1
+    working-directory: ./exercise-1
 
 jobs:
   lint:
